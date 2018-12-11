@@ -1384,7 +1384,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		margin-bottom:30px;
 	}
 	.expertiesdesc {
-		padding:0;
+		padding: 0 15px;
 		margin-bottom:50px;
 	}
 	.skillbar:last-child {
