@@ -82,7 +82,7 @@ p{
 	font-size:13px;
 	line-height:27px;
 	font-weight:400;
-	padding-bottom:33px;
+	padding-bottom:20px;
 	margin:0px;
 }
 h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
@@ -236,6 +236,10 @@ header{
 /*----------------------------------------------------
  	3.1 Menu Style
 ------------------------------------------------------*/
+/* temp fix to remove experience */
+.menuItem.experience {
+	display: none;
+}
 .isStuck{
     left:0px;
     width:100%;
@@ -435,6 +439,9 @@ header{
 	color:#5b4c5c;
 	padding-bottom:20px;
 }
+.aboutus h5 {
+	font-size: 25px;
+}
 .aboutus .btn-primary {
 	border:2px solid #746c75;
 	background:none;
@@ -467,21 +474,11 @@ header{
 	display:block;
 	margin-bottom:53px;
 	width:100%;
-	background:#e2e1e2;
-	height:7px;
-	border-radius:3px;
+	background:#e88988;
+	height:3px;
+	/* border-radius:3px;
 	-moz-border-radius:3px;
-	-webkit-border-radius:3px;
-	-webkit-transition:0.4s linear;
-	-moz-transition:0.4s linear;
-	-ms-transition:0.4s linear;
-	-o-transition:0.4s linear;
-	transition:0.4s linear;
-	-webkit-transition-property:width, background-color;
-	-moz-transition-property:width, background-color;
-	-ms-transition-property:width, background-color;
-	-o-transition-property:width, background-color;
-	transition-property:width, background-color;
+	-webkit-border-radius:3px; */
 }
 
 .skillbar-title {
@@ -527,7 +524,7 @@ header{
 	margin-bottom:-20px;
 }
 .expertiesico {
-	padding:70px 63px 70px 0;
+	padding:49px 60px;
 	text-align:right;
 	font-family:'Crimson Text',serif;
 	font-size:21px;
@@ -564,7 +561,7 @@ header{
 ------------------------------------------------------*/
 
 .educationdiploma {
-	background:#f8f8f8;
+	background:#fff;
 }
 .educationdiploma .container{
 	padding-top:65px ;
@@ -576,8 +573,40 @@ header{
 /*----------------------------------------------------
 	 8. Protfolio Style
 ------------------------------------------------------*/
+.portfolio-item {
+	padding: 3px;
+	list-style: none;
+  max-width: 260px;
+}
+
+.portfolio-image {
+	position: relative;
+}
+
+.portfolio-image-overlay {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	z-index: 100;
+} .portfolio-image-overlay:hover {
+	background-color: #00000054;
+	cursor: pointer;
+}
+
+
+.portfolio-flex-container {
+	text-align: center;
+	display: flex;
+	margin: 0;
+	flex-direction: row;
+	justify-content: center;
+	padding-bottom: 67px;
+	flex-wrap: wrap;
+}
+
+
 .protfolio{
-	background:#fff;
+	background:#f8f8f8;
 	width:100%;
 	overflow:hidden;
 }
@@ -1233,6 +1262,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	.navbar-toggle {
 		margin-top: 23px;
 		background: #fff;
+		/* hide menu button temporarily until bug fixed */
+		display: none;
 	}
 	.navbar .container{
 		/* padding:0; */
