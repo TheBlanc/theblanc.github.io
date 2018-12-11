@@ -329,7 +329,6 @@ header{
   z-index: 15;
 }
 .navbar-wrapper .container{
-	padding:0px;
 }
 
 .navbar-collapse{
@@ -402,26 +401,15 @@ header{
 	font-weight:normal;
 }
 .default-menu {
-	margin-top:-80px;
+	/* margin-top:-80px; */
 }
 .stuckMenu,
 .navbar-wrapper{
-	-o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
-
 	background: transparent;
 }
 .isStuck{
 	background:#fff ;
 
-	-o-transition: all .5s;
-    -ms-transition: all .5s;
-    -moz-transition: all .5s;
-    -webkit-transition: all .5s;
-    transition: all .5s;
 }
 /*----------------------------------------------------
 	4. About me Style
@@ -1244,9 +1232,10 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 	.navbar-toggle {
 		margin-top: 23px;
+		background: #fff;
 	}
 	.navbar .container{
-		padding:0;
+		/* padding:0; */
 	}
 	.isStuck.navbar-wrapper .navArea{
 		display:block;
@@ -1262,6 +1251,9 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 @media screen and (max-width: 767px) {
 	.navbar-header{
 		display:none;
+	}
+	.isStuck {
+		background: none;
 	}
 	.isStuck .navbar-header{
 		display:block;
