@@ -886,6 +886,16 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	9. Contact Style
 ------------------------------------------------------*/
 
+.contactDetails .heading {
+	padding-bottom: 22px;
+}
+
+.contactDetails h1 {
+	letter-spacing: 4px;
+  color: #372d38;
+  font-size: 23px;
+}
+
 .contact{
 	background:#f8f8f8;
 }
