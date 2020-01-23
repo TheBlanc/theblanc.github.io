@@ -42,7 +42,7 @@ body {
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	position:relative;
-	background:#000;
+	background:#fff;
 	width:100%;
 	height:100%;
 	overflow: scroll;
@@ -1402,6 +1402,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		margin-bottom:0;
 	}
 
+	.contactDetails h1 {
+		letter-spacing: 2px;
+		color: #372d38;
+		font-size: 1em;
+	}
 
 }
 
@@ -1417,6 +1422,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		font-size:15px;
 		padding-bottom:20px;
 	}
+
 
 }
 
@@ -1465,4 +1471,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		top:0px;
 
 	}
+
+
 }
