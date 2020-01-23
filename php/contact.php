@@ -70,15 +70,17 @@ if(mail($address, $e_subject, $msg, $headers)) {
 
 	// Email has sent successfully, echo a success page.
 
-	echo "<fieldset>";
-	echo "<div id='success_page'>";
-	echo "<h3>Email Sent Successfully.</h3>";
-	echo "<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>";
-	echo "</div>";
-	echo "</fieldset>";
+	echo("<fieldset>");
+	echo("<div id='success_page'>");
+	echo("<h3>Email Sent Successfully.</h3>");
+	echo("<p>Thank you <strong>$name</strong>, your message has been submitted to us.</p>");
+	echo("</div>");
+	echo("</fieldset>");
 
 } else {
 
 	echo 'ERROR!';
 
 }
+
+?>
