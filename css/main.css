@@ -79,7 +79,7 @@ img {
 }
 
 p{
-	font-size:14px;
+	font-size:16px;
 	line-height:27px;
 	font-weight:400;
 	padding-bottom:20px;
@@ -210,7 +210,7 @@ header{
 	width:100%;
 	position:absolute ;
 	left:0;
-	top:50%;
+	top:40%;
 	text-align:center;
 	margin-top:-35px;
 	padding:0 ;
@@ -418,42 +418,52 @@ header{
 /*----------------------------------------------------
 	4. About me Style
 ------------------------------------------------------*/
-.aboutus{
-	background:#ffffff;
-	text-align:left;
+.aboutMe {
+	background: #ffffff;
+	text-align: left;
 }
-.aboutus .container{
-	padding-top:80px ;
-	padding-bottom:47px ;
+.aboutMe .container {
+	padding-top: 80px ;
+	padding-bottom: 47px ;
 }
-.aboutus img {
-	padding:7px;
-	display:block;
-	border:1px solid #bab4bb;
+
+.aboutFlexContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
-.aboutus .heading p{
-	padding-bottom:41px;
+
+.aboutTextContainer {
+	margin-right: 25px;
 }
-.aboutus h4 {
-	font-size:16px;
-	color:#5b4c5c;
-	padding-bottom:20px;
+
+.aboutMe img {
+	padding: 7px;
+	display: block;
 }
-.aboutus h5 {
+.aboutMe .heading p {
+	padding-bottom: 41px;
+}
+.aboutMe h4 {
+	font-size: 16px;
+	color: #5b4c5c;
+	padding-bottom: 20px;
+}
+.aboutMe h5 {
 	font-size: 25px;
 }
-.aboutus .btn-primary {
-	border:2px solid #746c75;
-	background:none;
-	line-height:30px;
-	font-size:12px;
-	color:#372d38;
-	letter-spacing:2px;
-	text-transform:uppercase;
-	font-weight:600;
+.aboutMe .btn-primary {
+	border: 2px solid #746c75;
+	background: none;
+	line-height: 30px;
+	font-size: 12px;
+	color: #372d38;
+	letter-spacing: 2px;
+	text-transform: uppercase;
+	font-weight: 600;
 	border-radius: 0;
 }
-.aboutus .btn-primary:hover {
+.aboutMe .btn-primary:hover {
 	color:#979497;
 }
 
@@ -573,6 +583,72 @@ header{
 /*----------------------------------------------------
 	 8. Protfolio Style
 ------------------------------------------------------*/
+
+.portfolioButtonLinks ul {
+	margin: 0 auto;
+	text-align: left;
+	list-style-type: none;
+	display: flex;
+}
+.portfolioButtonLinks ul li {
+	display: inline-block;
+	text-align: center;
+	background: #bebabe;
+	color: #ffffff;
+	line-height: 55px;
+	width: 45px !important;
+	height: 45px !important;
+
+	-webkit-border-radius: 50%;
+    border-radius: 50%;
+}
+.portfolioButtonLinks ul li:hover {
+	background: #1d1d1d ;
+	cursor: pointer;
+}
+.portfolioButtonLinks ul li:hover	a {
+	color: #fff;
+}
+
+.portfolioButtonLinks ul div {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 20px 0 0;
+}
+
+.portfolioButtonLinks p {
+	font-size: 12px;
+}
+
+.portfolioButtonLinks ul li a {
+	color: #fff;
+	width: 42px !important;
+	height: 42px !important;
+}
+.portfolioButtonLinks ul li a i {
+	line-height: 48px !important;
+	color: #fff;
+}
+
+.portfolioItemHeading {
+  line-height: inherit;
+  padding-bottom: 0;
+}
+
+.portfolioItemDescription {
+	max-width: 400px;
+	list-style: none;
+	padding: 15px 25px;
+	text-align: left;
+}
+
+.portfolioItemDescriptionText {
+	color: black;
+	padding: 0;
+}
+
 .portfolio-item {
 	padding: 3px;
 	list-style: none;
@@ -596,6 +672,7 @@ header{
 
 .portfolio-flex-container {
 	text-align: center;
+	align-items: center;
 	display: flex;
 	margin: 0;
 	flex-direction: row;
@@ -891,7 +968,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 .contactDetails h1 {
-	letter-spacing: 4px;
+	letter-spacing: 2px;
   color: #372d38;
   font-size: 23px;
 }
@@ -994,26 +1071,12 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 
-.contactInfo{
-	background:#101010 url(../images/contact-bg.jpg) repeat 0 0 fixed;
-	text-align:center;
-	padding:94px 0 35px;
-	position:relative;
+.footer.contactButtons {
+	background: #fff;
+} .footer.contactButtons ul {
+	margin-bottom: 0;
 }
-.contactInfo:after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	top: 0px;
-	left: 0px;
-	z-index: 1;
-	background: rgba(0, 0, 0, 0.7);
-}
-.contactInfo .container{
-	position:relative;
-	z-index:2;
-}
+
 
 #message {
 	margin-bottom:30px;
@@ -1063,6 +1126,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	margin-bottom:62px;
 	text-align:center;
 	list-style-type:none;
+	justify-content: center;
 }
 .footer ul li{
 	display:inline-block;
@@ -1103,6 +1167,13 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 .footer p:last-child{
 	padding-bottom:0px;
+}
+
+.footer h3 {
+	font-size: 18px;
+	text-align: center;
+	padding-bottom: 50px;
+	font-weight: lighter;
 }
 .gototop {
 	display:inline-block;
@@ -1163,56 +1234,96 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 @media screen and (max-width: 991px) {
 
-	.bannerText h1{
-		font-size:65px;
-		line-height:71px;
-	}
-	.bannerText h2{
-		font-size:28px;
-	}
-	.proPic{
-		text-align:center;
+	.aboutFlexContainer {
+		align-items: center;
+		flex-direction: column;
 	}
 
-	.navbar-inverse .navbar-toggle .icon-bar{
-		background:#000;
+	.iconContainer {
+		padding-top: 40px;
+	}
+
+	.aboutTextContainer p {
+		padding-bottom: 0;
+	}
+
+	.aboutMe .container {
+		padding-bottom: 40px;
+	}
+
+	.aboutTextContainer {
+		margin: 0 20px;
+	}
+
+	.iconContainer {
+		width: 50%;
+	}
+
+	.bannerText h1 {
+		font-size: 65px;
+		line-height: 71px;
+	}
+	.bannerText h2 {
+		font-size: 28px;
+	}
+	.proPic {
+		text-align: center;
+	}
+
+	.navbar-inverse .navbar-toggle .icon-bar {
+		background: #000;
 	}
 	.navbar-inverse .navbar-toggle:hover .icon-bar,
-	.navbar-inverse .navbar-toggle.active .icon-bar{
-		background:#fff;
+	.navbar-inverse .navbar-toggle.active .icon-bar {
+		background: #fff;
 	}
 	.navbar-inverse .navbar-toggle.active {
-		background-color:#11141c;
+		background-color: #11141c;
 	}
+	.aboutImageContainer {
+		display: none;
+	}
+
 }
 
 
+.aboutIconBoxContainer {
+	width: 49%;
+	display: inline-block;
+}
+.aboutImageContainer {
+	display: flex;
+	flex-direction: row;
+}
+.noteBookImage {
+	padding: 15px;
+}
 
 
 @media screen and (max-width: 810px) {
-	body{
-		min-height:700px;
+	body {
+		min-height: 700px;
 	}
-	#header h3{
+	#header h3 {
 		font-size: 38px;
 	}
-	#header h3 span{
+	#header h3 span {
 		font-size: 16px;
 	}
 
-	.abc{
+	.abc {
 		width:100%;
 	}
 	.navArea {
 		float:none;
 	}
 
-
-
 }
 
 
 @media screen and (min-width: 768px) {
+
+
 	.conForm input.col-sm-6 {
 		width: 48.5%;
 	}
@@ -1291,6 +1402,8 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 @media screen and (max-width: 767px) {
+
+
 	.navbar-header{
 		display:none;
 	}
@@ -1356,7 +1469,32 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 }
 
 
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 665px) {
+
+	.portfolio-flex-container {
+		padding-bottom: 0;
+	}
+
+	.iconContainer {
+		width: 60%;
+	}
+
+	.portfolioButtonLinks ul div {
+		margin: 0 20px;
+	}
+
+	.portfolioButtonLinks ul {
+		justify-content: center;
+	}
+
+	.portfolioItemDescription {
+		text-align: center;
+		width: fit-content;
+		max-width: unset;
+	}
+	.portfolio-flex-container {
+		flex-direction: column;
+	}
 
 	#wrapper{
 		top: 200px !important;
@@ -1385,7 +1523,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 		font-size: 18px;
 		line-height:24px;
 	}
-	.aboutus h3 {
+	.aboutMe h3 {
 		padding-top:20px;
 	}
 	.expertiesico {
@@ -1412,6 +1550,11 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 
 @media screen and (max-width: 480px) {
+
+	.iconContainer {
+		width: 70%;
+	}
+
 	.bannerText h1 {
 		font-size:32px;
 	}

@@ -3,31 +3,15 @@
 $(document).ready(function(){
 	$('.slide').prepend('<div class="patternOverlay"></div>');
 
-
-	// $('.skillbar').each(function(){
-	// 	$(this).find('.skillbar-bar').animate({
-	// 		width:$(this).attr('data-percent')
-	// 	},6000);
-	// });
-	//
-	// $('.skillbar').each(function(){
-	// 	$(this).find('.skill-bar-percent').animate({
-	// 		left:$(this).attr('data-percent')
-	// 	},6000);
-	// });
-	//
-	// $('.skillbar').each(function(){
-	// 	$(this).find('.skill-bar-percent').text($(this).attr('data-percent'));
-	// });
+	/*===========================================================*/
+		/*	Banner
+	/*===========================================================*/
+	$('#banner').superslides({
+		animation: 'fade',
+		play: 5000
+	});
 
 
-	// if($(window).width()>767){
-	// 	$('.navbar-wrapper').animate({
-	// 		opacity:0
-	// 	},200);
-	// 	$('.navbar-wrapper').addClass('default-menu');
-	//
-	// }
 
 	$('#nav-show').click(function(x){
 		x.preventDefault();
