@@ -434,7 +434,7 @@ header{
 }
 
 .aboutTextContainer {
-	margin-right: 25px;
+	margin-left: 25px;
 }
 
 .aboutMe img {
@@ -466,6 +466,24 @@ header{
 .aboutMe .btn-primary:hover {
 	color:#979497;
 }
+
+.aboutIconBoxContainer {
+	width: 35%;
+	display: inline-block;
+}
+
+.iconContainer {
+	text-align: center;
+}
+
+.aboutImageContainer {
+	display: flex;
+	flex-direction: row;
+}
+.noteBookImage {
+	padding: 15px;
+}
+
 
 /*----------------------------------------------------
 	5. Skill & Expert Style
@@ -620,6 +638,7 @@ header{
 
 .portfolioButtonLinks p {
 	font-size: 12px;
+	padding: 0;
 }
 
 .portfolioButtonLinks ul li a {
@@ -1257,6 +1276,7 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 
 	.iconContainer {
 		width: 50%;
+		text-align: center;
 	}
 
 	.bannerText h1 {
@@ -1285,20 +1305,6 @@ ul.portfolioContainer li:hover span.hoverBox .linKed{
 	}
 
 }
-
-
-.aboutIconBoxContainer {
-	width: 49%;
-	display: inline-block;
-}
-.aboutImageContainer {
-	display: flex;
-	flex-direction: row;
-}
-.noteBookImage {
-	padding: 15px;
-}
-
 
 @media screen and (max-width: 810px) {
 	body {
