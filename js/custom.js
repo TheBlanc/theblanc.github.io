@@ -10,9 +10,9 @@ $(document).ready(function(){
 		animation: 'fade',
 		play: 5000
 	});
-
-
-
+//
+//
+//
 	$('#nav-show').click(function(x){
 		x.preventDefault();
 		$('.wrapper').removeClass('noGap');
@@ -90,7 +90,7 @@ $(window).load(function(){
 
 
 
-// for portfoli lightbox jquary
+// for portfolio lightbox jquary
 jQuery(function() {
 	var $chosenSheet,
 	$stylesheets = $( "a[id^=theme-]" );
@@ -117,38 +117,6 @@ $(function() {
   });
 });
 
-
-// Testimonial slider
-$(window).load(function(){
-  $('.flexslider').flexslider({
-	animation: "fade",
-	animationLoop: true,
-	slideshow: true,
-	pauseOnAction: false,
-	slideshowSpeed: 7000,
-	controlNav: true,
-	start: function(slider){
-	  $('body').removeClass('loading');
-	}
-  });
-});
-
-
-// we worked slider
-$(window).load(function(){
-      $('.worklogo').flexslider({
-        animation: "slide",
-		slideshow: false,
-        itemWidth: 210,
-        itemMargin: 5,
-
-      });
-    });
-
-// Skill set
-
-
-// Make menu visible
 
 
 }(jQuery));
